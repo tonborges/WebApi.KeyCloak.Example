@@ -35,7 +35,7 @@ public static class JwtBearerConfiguration
                 {
                     ValidateAudience = false,
                     ValidateIssuerSigningKey = false,
-                    ValidateIssuer = false,
+                    ValidateIssuer = true,
                     ValidIssuer = $"{configuration["Keycloak:Authority"]}/realms/{configuration["Keycloak:Realms"]}",
                     ValidateLifetime = true,
                     SaveSigninToken = false
