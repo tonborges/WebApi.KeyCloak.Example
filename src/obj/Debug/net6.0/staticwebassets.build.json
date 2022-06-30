@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8XWSct6nWMwj5NP/0SDYOXo1gnmClwRjp70FpHruscw=",
+  "Source": "WebApi.KeyCloak.Example",
+  "BasePath": "_content/WebApi.KeyCloak.Example",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
