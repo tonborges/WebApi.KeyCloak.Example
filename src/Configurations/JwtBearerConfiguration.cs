@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.IdentityModel.Tokens;
@@ -10,6 +11,13 @@ public static class JwtBearerConfiguration
     public static IServiceCollection AddJwtBearerConfiguration(this IServiceCollection services,
         IConfiguration configuration)
     {
+        #if DEBUG
+        
+        services.AddAuthentication("BasicAuthentication")
+            .AddScheme<AuthenticationSchemeOptions, AuthenticatedUser>("BasicAuthentication", null);
+
+        #else
+        
         services
             .AddAuthentication(options =>
             {
@@ -62,7 +70,9 @@ public static class JwtBearerConfiguration
                     }
                 };
             });
-
+        
+        #endif
+        
         services.AddAuthorization();
 
         return services;
