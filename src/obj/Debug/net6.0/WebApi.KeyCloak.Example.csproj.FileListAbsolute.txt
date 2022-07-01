@@ -32,4 +32,3 @@
 /Users/tonborges/_projetros_/WebApi.KeyCloak.Example/src/obj/Debug/net6.0/WebApi.KeyCloak.Example.pdb
 /Users/tonborges/_projetros_/WebApi.KeyCloak.Example/src/obj/Debug/net6.0/WebApi.KeyCloak.Example.genruntimeconfig.cache
 /Users/tonborges/_projetros_/WebApi.KeyCloak.Example/src/obj/Debug/net6.0/ref/WebApi.KeyCloak.Example.dll
-/Users/tonborges/_projetros_/WebApi.KeyCloak.Example/src/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
